@@ -1,0 +1,28 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Uploads
+uploads/
+**/uploads/
+
+# Build outputs
+backend/build/
+backend/.gradle/
+frontend/build/
+frontend/node_modules/
+
+# Environment
+.env
+.env.local
+
