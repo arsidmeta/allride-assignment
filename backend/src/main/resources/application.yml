@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: bulk-user-import-backend
+
+server:
+  port: 8080
+
+app:
+  upload:
+    dir: uploads
+
+logging:
+  level:
+    com.allride: INFO
+    root: INFO
+
