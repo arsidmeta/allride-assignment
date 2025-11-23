@@ -9,7 +9,7 @@ Upload a CSV file through the web UI, backend processes it asynchronously using 
 ## Tech Stack
 
 - Backend: Kotlin + Spring Boot 3.2
-- Frontend: React + Vite + Material-UI
+- Frontend: React + Vite + MUI
 - Messaging: Kotlin Coroutines Channels (simple in-memory pub/sub)
 
 ## How to run
@@ -89,5 +89,3 @@ frontend/
     App.jsx
     main.jsx
 ```
-
-That's pretty much it. Let me know if you have questions!
