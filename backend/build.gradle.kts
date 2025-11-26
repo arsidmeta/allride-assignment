@@ -9,7 +9,7 @@ group = "com.allride"
 version = "1.0.0"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
 }
 
 repositories {
@@ -24,18 +24,18 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation("com.opencsv:opencsv:5.8")
     
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    // testImplementation("org.springframework.boot:spring-boot-starter-test")
+    // testImplementation("org.brains.kotlinx:kotlinx-coroutines-test:1.7.3")
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "17"
+        jvmTarget = "21"
     }
 }
 
-tasks.withType<Test> {
-    useJUnitPlatform()
-}
+// tasks.withType<Test> {
+//     useJUnitPlatform()
+// }
 
